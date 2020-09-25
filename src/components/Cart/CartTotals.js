@@ -35,6 +35,10 @@ export default function CartTotals({value}) {
             <strong> {cartTotalEuro}</strong>
           </h5>
           </h5>
+         <Link to='/PlaceOrder'>
+            <button total={cartTotal} clearCart={clearCart} history={history} className="btn btn-outline-danger text-uppercase mb-3 px-5" type="button"
+            >place order</button>  
+          </Link>
           </div>   
         </div>   
         </div>
