@@ -8,7 +8,7 @@ import Details from './components/Details';
 import Cart from './components/Cart';
 import Default from './components/Default';
 import Modal from './components/Modal';
-
+import PlaceOrder from './components/PlaceOrder';
 class App extends Component {
   render() {
   return (
@@ -18,6 +18,7 @@ class App extends Component {
         <Route exact path="/" component={ProductList} />
         <Route path= "/details" component={Details} />
         <Route path= "/Cart" component={Cart} />
+        <Route path= "/PlaceOrder" component={PlaceOrder}/>
         <Route  component={Default} />
       </Switch>
       <Modal />
